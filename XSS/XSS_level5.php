@@ -19,7 +19,7 @@
 
 <?php 
 if (isset($_GET["username"])) {
-    $user = htmlspecialchars($_GET["username"]);
+    $user = str_replace("<", "", $_GET["username"]);
     echo "Your name is $user";
 }
  ?>
