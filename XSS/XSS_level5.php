@@ -17,7 +17,6 @@
 </form>
     </div>
 
-
 <?php 
     if (isset($_GET["username"])) {
         $user = htmlspecialchars($_GET["username"]);
